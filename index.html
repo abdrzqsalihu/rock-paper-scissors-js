@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+
+
+    <style>
+        body {
+            background-color: #191919;
+            color: white;
+            font-family: Arial;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            text-align: center;
+
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .move-icon {
+            /* width: 50px; */
+            height: 50px;
+        }
+
+        .move-btn {
+            background: transparent;
+            border: solid 2px white;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .result {
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .score {
+            margin-top: 60px;
+        }
+
+        .reset-score-button,
+        .autoplay-score-button {
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p class="title">Rock Paper Scissors</p>
+
+        <button class="move-btn rock-button">
+            <img class="move-icon" src="img/rock-emoji.png" alt="">
+        </button>
+        <button class="move-btn paper-button">
+            <img class="move-icon" src="img/paper-emoji.png" alt="">
+        </button>
+        <button class="move-btn scissors-button">
+            <img class="move-icon" src="img/scissors-emoji.png" alt="">
+        </button>
+
+        <p class="js-result result"></p>
+        <p class="js-moves moves">
+
+        </p>
+        <p class="js-score score"></p>
+
+        <button class="reset-score-button reset-button">
+            Reset Score
+        </button>
+
+        <button class="autoplay-score-button autoplay">
+            Auto Play
+        </button><br><br>
+        <p class="js-reset-confirmation"></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
